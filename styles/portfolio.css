@@ -1,6 +1,6 @@
 :root {
   --branding-color: #233142;
-  --secondary-color: #ebf7fd;
+  --secondary-color: #ecf3fa;
   --heading-font-family: "Poppins", sans-serif;
   --default-font-family: "Open Sans", sans-serif;
 }
@@ -18,7 +18,14 @@ h4 {
 h1 {
   font-size: 68px;
 }
-
+h2 {
+  font-size: 48px;
+}
+p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+}
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
@@ -38,11 +45,13 @@ h1 {
 }
 .profile {
   max-width: 300px;
-  margin: 20px;
   border-color: var(--branding-color);
   border-style: solid;
   border-width: 5px;
   border-radius: 50%;
+}
+.about-me {
+  max-width: 600px;
 }
 
 .btn-branding {
@@ -52,4 +61,30 @@ h1 {
   font-size: 18px;
   line-height: 27px;
   padding: 12px 20px;
+}
+
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  font-size: 18px;
+  line-height: 27px;
+  padding: 12px 20px;
+  border-radius: 4px;
+}
+.project-description {
+  padding: 50px 30px;
+}
+
+@media (max-width: 950px) {
+  h1 {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .project-description {
+    padding: 0;
+    text-align: center;
+  }
 }
