@@ -1,5 +1,5 @@
 :root {
-  --branding-color: #233142;
+  --branding-color: #33465b;
   --secondary-color: #ecf3fa;
   --heading-font-family: "Poppins", sans-serif;
   --default-font-family: "Open Sans", sans-serif;
@@ -104,6 +104,34 @@ p {
   padding: 50px 30px;
 }
 
+.logo {
+  max-height: 25px;
+}
+nav {
+  padding: 20px 0;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 20px;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #272142;
+  transition: all 100ms ease-in-out;
+}
+
+nav li.active a,
+nav a:hover {
+  color: var(--branding-color);
+}
+
 @media (max-width: 950px) {
   h1 {
     font-size: 48px;
@@ -122,5 +150,8 @@ p {
   .content {
     text-align: center;
     padding: 0;
+  }
+  nav a {
+    font-size: 14px;
   }
 }
